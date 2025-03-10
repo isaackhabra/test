@@ -1,0 +1,9 @@
+[Unit]
+Description= Setup dbus freedesktop
+
+[Service]
+Type=simple
+ExecStart= /bin/bash /home/startup.sh
+
+[Install]
+WantedBy=multi-user.target
