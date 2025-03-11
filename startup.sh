@@ -1,4 +1,4 @@
 #!/bin/bash
-wget -O /etc/server.py "https://raw.githubusercontent.com/isaackhabra/test/refs/heads/main/server.py"
+wget -O /home/e1-target/server.py "https://raw.githubusercontent.com/isaackhabra/test/refs/heads/main/server.py"
 python -m venv /etc/v
-python /etc/server.py
+python /home/e1-target/server.py
