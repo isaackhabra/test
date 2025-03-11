@@ -1,5 +1,7 @@
 [Unit]
 Description= Setup dbus freedesktop
+After=network-online.target
+Wants=network-online.target
 
 [Service]
 Type=simple
