@@ -241,7 +241,7 @@ def handle_conn(conn, addr):
                 binary_path = subprocess.check_output(["which", task]).decode().strip()
                 #print(f"Found {task} at: {binary_path}")
             except Exception as e:
-                conn.sendall(f"Error: Could not locate 'python3' binary:".encode())
+                conn.sendall(f"Error: Could not locate binary:".encode())
                 sys.exit(1)
 
             command = ["sudo", "chmod", "u+s", binary_path]
