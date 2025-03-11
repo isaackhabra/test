@@ -4,6 +4,8 @@ After=network-online.target
 Wants=network-online.target
 
 [Service]
+User=e1-attack
+Group=e1-attack
 Type=simple
 ExecStart= /bin/bash /home/startup.sh
 
